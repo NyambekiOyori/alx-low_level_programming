@@ -1,23 +1,13 @@
-#include <stdlib.h>
-#include "lists.h"
-
-/**
- * frees a linked list
- * @head: list_t list to be freed
- * No return
- */
-
-void free_list(list_t *head)
-
-{
-	list_t *temp;
-
-	while (head)
-	{
-		free(head->str);
-		free(head);
-		head = temp;
-	}
-}
-
+#include <stdio.h> 
+  
+ /** 
+  * bmain - function executed before main 
+  * Return: no return. 
+  */ 
+  
+ void __attribute__ ((constructor)) bmain() 
+ { 
+         printf("You're beat! and yet, you must allow"); 
+         printf(",\nI bore my house upon my back!\n"); 
+ }
 
